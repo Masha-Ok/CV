@@ -1,2 +1,2 @@
 # CV
- https://Masha-Ok.github.io/cv/cv
+https://masha-ok.github.io/CV/cv
