@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth; 
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans ExtraLight';
+    font-size: 18px;
+    padding: 0;
+  }
+  h1 {
+    font-family: 'Wagon';
+    color:#EAD6BB;
+    font-size: 80px;
+    text-align: center;
+  }
+  h2 {
+    font-family: 'Plus Jakarta Sans ExtraLight';
+    color:#F5BD5B;
+    font-size: 25px;
+    text-align: center;
+  }
+  h3{
+    font-family: 'Plus Jakarta Sans ExtraLight';
+    margin: 0;
+    color:#F5BD5B;
+    font-size: 25px;
+  }
+
+  h4{
+    font-family: 'Plus Jakarta Sans ExtraLight';
+    color:#EAD6BB;
+    font-size: 15px;
+  }
+  
+  h5{
+    font-family: 'Plus Jakarta Sans Light';
+    color:#EAD6BB;
+    font-size: 15px;
+  }
+  h6 {
+    font-family: 'coffekan';
+    color:#F5BD5B;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  body{
+    font-family: 'Plus Jakarta Sans Light';
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    display: flex;
+    background-color: rgb(4, 18, 19);
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 50%
+  }
+  .header{
+    background-color:rgba(4, 18, 19);
+    min-height: 40 px;
+  }
+  .nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-link{
+    font-family: 'Plus Jakarta Sans Light'; 
+    text-decoration: none;
+    color:#F5BD5B;
+  }
+  .nav-item{
+    margin-right: 20px;
+    margin-top: 10px; 
+  }
+ 
+  .section {
+      border-bottom: 1px solid #ffffff;
+      padding: 30px 30px;
+      width: calc(50% - 20px);
+  }
+  .section-profile{
+      width: 100%;
+      display: flex;
+  }
+  .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .section-profile-title {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: center;
+  }
+  code {
+    font-family: 'Akrobat';
+    color: white;
+    font-size: 15px;
+  }
+  a{
+    font-family: 'Plus Jakarta Sans ExtraLight';
+    font-size: 15px;
+    color:#ffffff
+  }
+
+  .ul1{
+    list-style-type: circle;
+    color: #EAD6BB;
+  }
+
+  .ul1 h4{
+    display: inline;
+  }
