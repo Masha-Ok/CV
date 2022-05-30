@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>cv</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section section-profile" id="profile">
+              <div class="section-profile-logo"> 
+                <img src="img\Site-round.png" alt="Maria">
+              </div>
+              <div class="section-profile-title">
+                  <h1 class="section-title main-title">MARIA OK</h1>
+                  <h6 class="section-subtitle">student</h6>
+              </div>
+            </section>  
+            <section class="section" id="contacts">
+                <h3 class="section-contacts">Contacts</h3>
+                <ul class="section-list">
+                    <li class="section-item contacts-item">Vitebsk, Belarus</li>
+                    <li class="section-item contacts-item"><h5>Email: </h5> <a href="mailto:mar.okunevich@gmail.com" title="email">mar.okunevich@gmail.com</a></li>
+                    <li class="section-item contacts-item"><h5>Github: </h5> <a href="https://github.com/Masha-Ok" title="github">Masha-Ok</a></li>
+                    <li class="section-item contacts-item"><h5>Telegram: </h5> <a href="https://t.me/hey_youaregay" title="Telegram">@hey_youaregay</a></li>
+                </ul>
+            </section>
+            <section class="section section-skills" id="skills">
+              <h3>Skills</h3>
+              <br>
+              <ul class="ul1">
+                <li><h4>Adobe Illustrator</h4></li>
+                <li><h4>Adobe Photoshop</h4></li>
+                <li><h4>C++</h4></li>    
+                <li><h4>Microsoft Excel</h4></li>    
+                <li><h4>Microsoft Word</h4></li>
+              </ul>
+            </section>
+            
+            <section class="section section-code" id="code">
+              <h3>Code</h3>
+              <pre class="pre">
+<code>
+class Bus { 
+private: 
+ int number; 
+ int year; 
+public: 
+ friend istream& operator>>(istream& in, Bus& b); 
+ friend ostream& operator<<(ostream& out, Bus& b); 
+ int getReleaseYear() { 
+  return year; 
+ }; 
+ Bus(); 
+ Bus(char number[5], int year); 
+}; 
+ 
+istream& operator>>(istream& in, Bus& b) { 
+ cout << "Input number of bus: "; 
+ in >> b.number; 
+ cout << "Input the year of manufacture: "; 
+ in >> b.year; 
+ cout << endl; 
+ return in; 
+}; 
+ 
+ostream& operator<<(ostream& out, Bus& b) { 
+ cout << "List of buses: "; 
+ out << b.number << " " 
+  << b.year << endl; 
+ return out; 
+}; 
+ 
+Bus::Bus() { 
+}; 
+ 
+bool comp(Bus a, Bus b){ 
+ return(a.getReleaseYear() < b.getReleaseYear()); 
+} 
+ 
+int main() { 
+ ifstream fin; 
+ 
+ vector Bus park; 
+ int N; 
+ cout << "Input the count of buses: "; 
+ cin >> N; 
+ cout << endl; 
+ 
+ Bus b = Bus(); 
+ 
+ for (int i = 0; i < N; i++) { 
+  Bus b; 
+  cin >> b; 
+  park.push_back(b); 
+ } 
+ 
+ sort(park.begin(), park.end(), comp); 
+ 
+ cout << "Sorted park: " << endl; 
+ for (int i = 0; i < N; i++) { 
+  cout << park[i]; 
+ } 
+ 
+  ofstream fout; 
+  fout.open("Park2.txt"); 
+ 
+  if (fout.is_open()) { 
+   fout << "The list of buses:" << endl; 
+   for (int i = 0; i < N; i++) { 
+    fout << "Bus " << i + 1 << ": "; 
+    fout << park[i]; 
+   } 
+   fout.close(); 
+  } 
+  else { 
+   cout << "File opening error" << endl; 
+  } 
+ 
+ system("pause"); 
+ return 0; 
+} 
+</code>
+</pre>
+</section>
+
+<section class="section section-education" id="education">
+    <h3>Current studying:</h3>
+    <br><h4>Information resource management, 1 grade, VSU named after P.M. Masherov</h4>
+    <br><br>
+    <h3>Previous education:</h3>
+    <br><h4>School №2 named after F.T. Blokhin, GPA - 9.3</h4>
+    <br><br>
+    <h3>English level</h3>  
+    <br><h4>B1</h4>
+    </section>
+    
+
+</div>
+</main>
+</body>
+
+</html>
